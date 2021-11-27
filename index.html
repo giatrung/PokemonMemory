@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link rel="stylesheet" href="styles.css">
+<title>Title</title>
+</head>
+  <body>
+      <div id="player-board" style="width: 20%;">
+        <h1>List Of Winner</h1>
+        <div id="list">
+        </div>
+      </div>
+      <div id="game" style="width: 50%;">
+        <div id="intro">
+          <h1>Welcome To</h1>
+          <h1>Pokemon Memory Game</h1>
+          <input type="text" id="name" class="form-control" placeholder="Your name" required>
+          <button class="btn btn-light" id="start" disabled><b>Start</b></button><br>
+        </div>
+        <section id="memory-game">
+        <div class="memory-card" data-pokemon="pikachu">
+          <img class="front-face" src="../img/pikachu.jpg" alt="pikachu" />
+          <img class="back-face" style="padding: 0px;" src="../img/pokeball.jpg" alt="Pokeball" />
+        </div>
+        <div class="memory-card" data-pokemon="pikachu">
+          <img class="front-face" src="../img/pikachu.jpg" alt="pikachu" />
+          <img class="back-face" style="padding: 0px;" src="../img/pokeball.jpg" alt="Pokeball" />
+        </div>
+    
+        <div class="memory-card" data-pokemon="charmander">
+          <img class="front-face" src="../img/charmander.png" alt="charmander" />
+          <img class="back-face" style="padding: 0px;" src="../img/pokeball.jpg" alt="Pokeball" />
+        </div>
+        <div class="memory-card" data-pokemon="charmander">
+          <img class="front-face" src="../img/charmander.png" alt="charmander" />
+          <img class="back-face" style="padding: 0px;" src="../img/pokeball.jpg" alt="Pokeball" />
+        </div>
+    
+        <div class="memory-card" data-pokemon="squirrel">
+          <img class="front-face" src="../img/squirrel.png" alt="squirrel" />
+          <img class="back-face" style="padding: 0px;" src="../img/pokeball.jpg" alt="Pokeball" />
+        </div>
+        <div class="memory-card" data-pokemon="squirrel">
+          <img class="front-face" src="../img/squirrel.png" alt="squirrel" />
+          <img class="back-face" style="padding: 0px;" src="../img/pokeball.jpg" alt="Pokeball" />
+        </div>
+    
+        <div class="memory-card" data-pokemon="bulbasaur">
+          <img class="front-face" src="../img/bulbasaur.jpg" alt="bulbasaur" />
+          <img class="back-face" style="padding: 0px;" src="../img/pokeball.jpg" alt="Pokeball" />
+        </div>
+        <div class="memory-card" data-pokemon="bulbasaur">
+          <img class="front-face" src="../img/bulbasaur.jpg" alt="bulbasaur" />
+          <img class="back-face" style="padding: 0px;" src="../img/pokeball.jpg" alt="Pokeball" />
+        </div>
+    
+        <div class="memory-card" data-pokemon="togepi">
+          <img class="front-face" src="../img/togepi.png" alt="togepi" />
+          <img class="back-face" style="padding: 0px;" src="../img/pokeball.jpg" alt="Pokeball" />
+        </div>
+        <div class="memory-card" data-pokemon="togepi">
+          <img class="front-face" src="../img/togepi.png" alt="togepi" />
+          <img class="back-face" style="padding: 0px;" src="../img/pokeball.jpg" alt="Pokeball" />
+        </div>
+    
+        <div class="memory-card" data-pokemon="piplup">
+          <img class="front-face" src="../img/piplup.jpg" alt="piplup" />
+          <img class="back-face" style="padding: 0px;" src="../img/pokeball.jpg" alt="Pokeball" />
+        </div>
+        <div class="memory-card" data-pokemon="piplup">
+          <img class="front-face" src="../img/piplup.jpg" alt="piplup" />
+          <img class="back-face" style="padding: 0px;" src="../img/pokeball.jpg" alt="Pokeball" />
+        </div>
+    
+        <div class="memory-card" data-pokemon="koduck">
+          <img class="front-face" src="../img/koduck.jpg" alt="koduck" />
+          <img class="back-face" style="padding: 0px;" src="../img/pokeball.jpg" alt="Pokeball" />
+        </div>
+        <div class="memory-card" data-pokemon="koduck">
+          <img class="front-face" src="../img/koduck.jpg" alt="koduck" />
+          <img class="back-face" style="padding: 0px;" src="../img/pokeball.jpg" alt="Pokeball" />
+        </div>
+    
+        <div class="memory-card" data-pokemon="pidgeot">
+          <img class="front-face" src="../img/pidgeot.png" alt="pidgeot" />
+          <img class="back-face" style="padding: 0px;" src="../img/pokeball.jpg" alt="Pokeball" />
+        </div>
+        <div class="memory-card" data-pokemon="pidgeot">
+          <img class="front-face" src="../img/pidgeot.png" alt="pidgeot" />
+          <img class="back-face" style="padding: 0px;" src="../img/pokeball.jpg" alt="Pokeball" />
+        </div>
+    
+        <div class="memory-card" data-pokemon="totodile">
+          <img class="front-face" src="../img/totodile.png" alt="totodile" />
+          <img class="back-face" style="padding: 0px;" src="../img/pokeball.jpg" alt="Pokeball" />
+        </div>
+        <div class="memory-card" data-pokemon="totodile">
+          <img class="front-face" src="../img/totodile.png" alt="totodile" />
+          <img class="back-face" style="padding: 0px;" src="../img/pokeball.jpg" alt="Pokeball" />
+        </div>
+    
+        <div class="memory-card" data-pokemon="chicorita">
+          <img class="front-face" src="../img/chicorita.png" alt="chicorita" />
+          <img class="back-face" style="padding: 0px;" src="../img/pokeball.jpg" alt="Pokeball" />
+        </div>
+        <div class="memory-card" data-pokemon="chicorita">
+          <img class="front-face" src="../img/chicorita.png" alt="chicorita" />
+          <img class="back-face" style="padding: 0px;" src="../img/pokeball.jpg" alt="Pokeball" />
+        </div>
+
+        <div class="memory-card" data-pokemon="tochic">
+          <img class="front-face" src="../img/tochic.png" alt="tochic" />
+          <img class="back-face" style="padding: 0px;" src="../img/pokeball.jpg" alt="Pokeball" />
+        </div>
+        <div class="memory-card" data-pokemon="tochic">
+          <img class="front-face" src="../img/tochic.png" alt="tochic" />
+          <img class="back-face" style="padding: 0px;" src="../img/pokeball.jpg" alt="Pokeball" />
+        </div>
+
+        <div class="memory-card" data-pokemon="treeko">
+          <img class="front-face" src="../img/treeko.png" alt="treeko" />
+          <img class="back-face" style="padding: 0px;" src="../img/pokeball.jpg" alt="Pokeball" />
+        </div>
+        <div class="memory-card" data-pokemon="treeko">
+          <img class="front-face" src="../img/treeko.png" alt="treeko" />
+          <img class="back-face" style="padding: 0px;" src="../img/pokeball.jpg" alt="Pokeball" />
+        </div>
+        
+        </section>
+      </div>
+      <div id="board">
+          <div id="info">
+            <h1>Time: </h1>
+            <span class="time" id="minute">1</span><span>:</span><span class="time" id="second">00</span>
+            <h1>Best Score: </h1>
+            <span id="bestScore">0</span> <br>
+            <h1>Your Score: </h1>
+            <span id="yourScore">0</span>
+          </div>
+      </div>
+    <!-- <script type="module" src="module/scripts.js"></script> -->
+    <script type="module" src="module/main.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+</body>
+</html>
